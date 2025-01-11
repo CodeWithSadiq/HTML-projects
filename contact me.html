@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Form</title>
+</head>
+<body>
+    <header><h1>Contact me</h1></header>
+    <main>
+        <hr><hr> 
+        <h3>Form</h3>
+        <form action="">
+            <label for="Name">UserName:</label>
+                <input type="text" name="Username" id="Name" placeholder="Enter your name">
+            <br><br>
+            <label for="Email">Email Address:</label>
+                <input type="email" name="Email" id="Email" placeholder="Enter your email">
+            <br><br>
+            <label for="Phone Number">Phone Number:</label>
+                <input type="tel" name="Phone Number" id="Phone Number" placeholder="Enter your Phone Number">
+            <br><br>
+            <label for="Country">Country Name:</label>
+            <select name="Country" id="Country">
+                <option value="Pakistan">Pakistan</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="America">America</option>
+                <option value="England">England</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Canada">Canada</option>
+                <option value="Turkey">Turkey</option>
+                <option value="China">China</option>
+                <option value="Australia">Australia</option>
+                <option value="India">India</option>
+            </select>
+            
+            <br><br>
+            <label for="Country">Country:</label>
+        <input list="countries" id="Country" name="Country" placeholder="Select Country:">
+        <datalist id="countries">
+            <option value="Pakistan">Pakistan</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="America">America</option>
+                <option value="England">England</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Canada">Canada</option>
+                <option value="Turkey">Turkey</option>
+                <option value="China">China</option>
+                <option value="Australia">Australia</option>
+                <option value="India">India</option>
+                </datalist>
+            
+            <br><br>
+            <label for="Nationality">Nationality:</label>
+                <input list="Nationalities" name="Nationality" id="Nationality" placeholder="Select your nationality">
+                <datalist id="Nationalities">
+                    <option value="Pakistani">Pakistani</option>
+                    <option value="Saudi">Saudi</option>
+                    <option value="American">American</option>
+                    <option value="British">British</option>
+                    <option value="Irish">Irish</option>
+                    <option value="Canadian">Canadian</option>
+                    <option value="Turkish">Turkish</option>
+                    <option value="Chinese">Chinese</option> 
+                    <option value="Australian">Australian</option>
+                    <option value="Indian">Indian</option>
+                </datalist>
+            
+            <br><br>
+            <label for="City">City:</label>
+                <input list="City" id="city" name="city" placeholder="Select your city">
+                <datalist id="City">
+                    <option value="Karachi">Karachi</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Mirpurkhas">Mirpurkhas</option>
+                    <option value="Umerkot">Umerkot</option>
+                    <option value="Jamshoro">Jamshoro</option>
+                    <option value="Nawabshah">Nawabshah</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Multan">Multan</option>
+                </datalist>
+            
+            <br><br>
+            <label for="Picture">Your Picture:</label>
+                <input type="file" name="Picture" id="Picture" accept="image/*">
+            
+            <h5>Enter something about yourself:</h5>
+            <label for="Message">
+                <textarea name="Message" id="Message"  rows="5" cols="30" placeholder="Enter your message here!" ></textarea>
+                </textarea>
+            </label>
+            <br><br>
+                <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
