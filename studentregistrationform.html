@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        h1 {
+            color: white;
+            background-color:cadetblue;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 10px 10px 10px black;
+            font-style:oblique;
+            border:dashed beige;
+        }
+        table {
+            background-color: skyblue;
+            background-image: url(study.jpg);
+            background-size:cover;
+            padding: 10px;
+            font-style: oblique;
+            border: double;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form name="My Form" action="">
+        <table cellpadding="5" cellspacing="5" align="center" >
+            <tr>
+                <td><label for="first name">First Name:</label></td>
+                <td><input type="text" name="First name" id="first name" placeholder="Write your First Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="middle name">Middle Name:</label></td>
+                <td><input type="text" name="Middle name" id="middle name" placeholder="Write your Middle Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="last name">Last Name:</label></td>
+                <td><input type="text" name="Last name" id="last name" placeholder="Write your Last Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="father name">Father's Name:</label></td>
+                <td><input type="text" name="Father name" id="father name" placeholder="Write your Father Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="mother name">Mother's Name:</label></td>
+                <td><input type="text" name="Mother name" id="mother name" placeholder="Write your Mother Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="date of birth">Date of Birth:</label></td>
+                <td><input type="date" name="First name" id="first name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="Email" id="email" placeholder="user@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone-number">Phone Number:</label></td>
+                <td><input type="text" name="Phone number" id="phone-number" pattern="\+[0-9]{1,3} [0-9]{10}" placeholder="e.g. +92 1234567890" required></td>
+            </tr>
+            <tr>
+                <td><label for="guardian-phone-no">Guardian's Phone no:</label></td>
+                <td><input type="text" name="Guardian Phone no" id="guardian-phone-no" pattern="\+[0-9]{1,3} [0-9]{10}" placeholder="e.g. +92 1234567890" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td><input type="radio" name="Gender" id="gender" required>Male
+                <input type="radio" name="Gender" id="gender" required>Female
+                <input type="radio" name="Gender" id="gender" required>Else</td>
+            </tr>
+            <tr>
+                <td><label for="choose course">Choose course:</label></td>
+                <td><input type="text" name="Course" id="choose course" list="courses" placeholder="e.g. Pre-Engineering" required>
+                    <datalist id="courses">
+                        <option value="Pre-Medical">Pre-Medical</option>
+                        <option value="Pre-Engineering">Pre-Engineering</option>
+                        <option value="Computer Science">Computer Science</option>
+                    </datalist>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea name="Address" id="address" placeholder="Your valid Address" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="picture">Picture:</label></td>
+                <td><input type="file" name="Picture" id="picture" accept="image/*" onchange="this.nextElementSibling.src=window.URL.createObjectURL(this.files[0])" required>
+                <img id="preview" src="" alt="picture preview" width="100" style="float:right;" required></td>
+                </tr>
+                <!-- <tr>
+                    <td><label for="picture">Picture:</label></td>
+                    <td><input type="file" name="Picture" id="picture" required></td>
+                </tr> -->
+                <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
