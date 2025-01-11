@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: rgb(160, 166, 172);
+            color: white;
+            text-shadow: 10px 10px 10px black;
+            font-style:oblique ;
+        }
+        form {
+            text-align: center;
+            background-color: aliceblue;
+            padding: 10px;
+            word-spacing: 5px;
+            border:dashed rgb(160, 166, 172);
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form action="" >
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username" autocomplete="on" autofocus required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" required>
+        <br><br>
+        <button type="submit">Login</button>
+        <input type="reset" value="Clear">
+        <p> forgot your password?
+            <a href="forgot.html">Click here</a>
+            <br>
+            Don't have an account? 
+            <a href="register.html">Register here.</a>
+        </p>
+        <br><br>
+    </form>
+</body>
+</html>
