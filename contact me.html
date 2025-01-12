@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Form</title>
+    <style>
+        header{text-align: center;
+            padding: 10px;
+            background-color:aquamarine;
+            font-style: italic;
+        }
+        main{
+            text-align: center;
+            padding:20px;
+            word-spacing:5px;
+        }
+    </style>
 </head>
 <body>
     <header><h1>Contact me</h1></header>
     <main>
         <hr><hr> 
-        <h3>Form</h3>
         <form action="">
             <label for="Name">UserName:</label>
                 <input type="text" name="Username" id="Name" placeholder="Enter your name">
@@ -21,7 +31,7 @@
             <label for="Phone Number">Phone Number:</label>
                 <input type="tel" name="Phone Number" id="Phone Number" placeholder="Enter your Phone Number">
             <br><br>
-            <label for="Country">Country Name:</label>
+            <!-- <label for="Country">Country Name:</label>
             <select name="Country" id="Country">
                 <option value="Pakistan">Pakistan</option>
                 <option value="Saudi Arabia">Saudi Arabia</option>
@@ -34,8 +44,7 @@
                 <option value="Australia">Australia</option>
                 <option value="India">India</option>
             </select>
-            
-            <br><br>
+            <br><br> -->
             <label for="Country">Country:</label>
         <input list="countries" id="Country" name="Country" placeholder="Select Country:">
         <datalist id="countries">
